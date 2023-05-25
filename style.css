@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.heder-box {
+    background: #22c3a3;
+    display: flex;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.heder-box .logo {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.heder-box .logo h1 {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.heder-box .list {
+    display: flex;
+    width: 80%;
+    justify-content: flex-end;
+}
+
+.heder-box .list ul {
+    display: flex;
+}
+
+.heder-box .list ul li {
+    padding: 10px 20px;
+    list-style: none;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.heder-box .list ul li::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 90%;
+    background: #001da0;
+    transition: 0.5s;
+}
+
+.heder-box .list ul li:hover::before {
+    height: 4px;;
+}
+
+.heder-box .list ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.heder-box-bottom {
+    background: url(./img/header-bg01.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.heder-box-bottom h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.heder-box-bottom h2 {
+    padding: 50px 0;
+    text-transform: capitalize;
+}
+
+.heder-box-bottom a {
+    display: block;
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: capitalize;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 20px 50px;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.heder-box-bottom a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    background: #d80c6b;
+    z-index: -1;
+    transform-origin: top left;
+    transition: 0.9s;
+    box-shadow: 0 0 35px #d80c6b;
+    border-radius: 5px;
+}
+
+.heder-box-bottom a:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+.services-box {
+    border-bottom: 5px solid #22c3a3;
+    padding-bottom: 120px;
+}
+
+.services-box .text {
+    text-align: center;
+    padding: 90px 0;
+}
+
+.services-box .text h1 {
+    font-size: 40px;
+}
+
+.services-box .text p {
+    padding: 25px;
+}
+
+.services-box .services-div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.services-box .services-div .services {
+    text-align: center;
+}
+
+.services-box .services-div .services h1 {
+    font-size: 30px;
+    padding: 10px 0;
+    text-transform: capitalize;
+}
+
+.services-box .services-div .services i {
+    font-size: 40px;
+    color: #22c3a3;
+}
+
+.about-box {
+    padding-bottom: 50px;
+}
+
+.about-box .text {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.about-box .text h1 {
+    text-transform: capitalize;
+}
+
+.about-box .text p {
+    padding: 10px 0;
+}
+
+.about-box .about-me {
+    display: flex;
+}
+
+.about-box .my-text {
+    margin: 20px;
+}
+
+.about-box .my-text .my-selef {
+    margin-top: 20px;
+}
+
+.about-box .my-text .my-selef h1 {
+    text-transform: capitalize;
+}
+
+.contact-box {
+    background: #dddddd;
+    padding: 20px;
+}
+
+.contact-box .text {
+    text-align: center;
+}
+
+.contact-box .text h1 {
+    font-size: 50px;
+    padding-top: 60px;
+}
+.contact-box .text p{
+    padding: 40px 0;
+}
+.contact-box .contact-me{
+    display: flex;
+    justify-content: space-around;
+}
+.contact-box .contact-me .div{
+    text-align: center;
+}
+.contact-box .contact-me .div i{
+    color: #00fdcb;
+    font-size: 30px;
+    padding: 10px 0;
+}
+.contact-box .contact-me .div p{
+    font-size: 20px;
+}
+.footer-box{
+    padding: 30px 0;
+    background: #22c3a3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    transition: .5s;
+
+}
+.footer-box i{
+    padding: 10px;
+    font-size: 35px;
+    color: #fff1f1;
+    transition: .5s;
+}
+.footer-box i:hover{
+    background: #fff1f1;
+    color: #4c00ff;
+    box-shadow: 0 0 35px #4c00ff;
+    border-radius: 50%;
+}
+.footer-box:hover{
+    background: rgb(58, 13, 13);
+}
